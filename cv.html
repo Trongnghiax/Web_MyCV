@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        NGUYEN TRONG NGHIA - UNIVERSITY OF ECONOMICS AND LAW - VNU-HCM
+        <ul class="icon-list">
+            <li><i class="fas fa-phone"></i></li><span class="phone-number">(+84) 848400676</span></li>            
+            <li><i class="fas fa-envelope"></i></li><span class="phone-number">nghianguyen.15.11.v@gmail.com</span></li> 
+            <li><i class="fas fa-map-marker-alt"></i></li><span class="phone-number">Thu Duc, Ho Chi Minh City</span></li> 
+        </ul>
+    </div>
+    <div class="container">
+        <div class="button-container">
+            <button onclick="showContent('introduction')">INTRODUCTION</button>
+            <button onclick="showContent('skill')">TOOL</button>
+            <button onclick="showContent('experience')">EXPERIENCE</button>
+            <button onclick="showContent('certificate')">CERTIFICATE</button>
+            <button onclick="showContent('project')">PROJECT</button>
+        </div>
+        <div class="content" id="content">
+            <!-- Nội dung sẽ hiển thị tại đây -->
+        </div>
+    </div>
+
+    <script>
+        function showContent(section) {
+            var content = document.getElementById('content');
+            content.innerHTML = ''; // Clear the content area
+            if (section === 'introduction') {
+                content.innerHTML = `
+                    <section id="introduction">
+                        <div class="intro-container">
+                            <div class="intro-image">
+                                <img src="Ảnh.png" alt="Profile Picture" />
+                            </div>
+                            <div class="intro-text">
+                                <h2>Introduction</h2>
+                                <p>As a senior student in <b class="highlight">E-commerce</b>, I bring a strong academic foundation and a passion for applying my skills in a professional setting.</p>
+                                <p>Throughout my studies, I actively engaged in extracurricular activities and led several successful programs. These experiences allowed me to develop valuable soft skills, particularly in time management and team leadership, giving me a well-rounded perspective essential for thriving in a dynamic work environment.</p>
+                                <p>Furthermore, I used to work as a store employee at a 5-star fast food restaurant chain, during which I was exposed to and understood more about the retail industry.</p>
+                                <p>With a focus on E-commerce projects and a diverse curriculum, I am confident in my ability to meet the demands of <b>The Winning at Points of Sales (Trade Marketing)</b> position.</p>
+                                <p><i>I invite you to explore the skills and knowledge I've developed over the past years!</i></p>
+                            </div>
+                        </div>
+                    </section>
+                `;
+            } else if (section === 'skill') {
+                content.innerHTML = `
+                    <div class="skill-level">
+                        <div class="level">
+                            <h2>ADVANCED</h2>
+                            <div class="logos">
+                                <img src="ww.png" alt="Logo 1" />
+                                <img src="ex.png" alt="Logo 2" />
+                                <img src="pp.png" alt="Logo 3" />
+                                <img src="ai.jfif" alt="Logo 4" />
+                                <img src="lgps.jfif" alt="Logo 1" />
+                                <img src="pr.jfif" alt="Logo 2" />
+                                <img src="canva.jfif" alt="Logo 3" />
+                                <img src="CapCut Apks.jfif" alt="Logo 4" />
+                            </div>
+                        </div>
+                        <div class="level">
+                            <h2>PROFICIENT</h2>
+                            <div class="logos">
+                                <img src="visu.png" alt="Logo 5" />
+                                <img src="logoandroid.png" alt="Logo 6" />
+                                <img src="ả.jfif" alt="Logo 6" />                                
+                                <img src="py.png" alt="Logo 7" />
+                            </div>
+                        </div>
+                        <div class="level">
+                            <h2>BASIC</h2>
+                            <div class="logos">
+                                <img src="sql.png" alt="Logo 8" />
+                                <img src="Bi.png" alt="Logo 9" />
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else if (section === 'experience') {
+                content.innerHTML = `
+                    <div class="experience-header">
+                        <h3>THE ASSOCIATED ORGAN OF VIETNAMESE STUDENTS' ASSOCIATION FACULTY OF INFORMATION SYSTEM UNIVERSITY OF ECONOMICS AND LAW</h3>
+                    </div>
+                    <div class="experience-timeline">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h3>2021 - 2022</h3>
+                                <p><strong>Role: </strong>Collaborator of Events & External Relations Department</p>
+                                <p><strong>Task: </strong>- MC for the organization's programs</p>
+                                <p style="margin-left: 52px;">- Participate as a collaborator in many student support programs to achieve the "Prize for Student of 5 Merits"</p>
+                                <p><i>Typical programs include teacher appreciation, graduation ceremonies, volunteer campaigns, football tournaments, etc.</i></p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3>2022 - 2023</h3>
+                                <p><strong>Role: </strong>Vice President</p>
+                                <p><strong>Task: </strong>- Responsible for all organization's programs</p>
+                                <p style="margin-left: 52px;">- Train and guide the other members</p>
+                                <p style="margin-left: 52px;">- Manage internal and external activities of the organization</p>
+                                <p style="margin-left: 52px;">- Contact and be responsible for sponsorship contracts with Sponsors: HCLTech Vietnam, Fly To Sky charity group,...</p>
+                                <p><i>Typical programs include webinars, faculty camps, volunteer campaigns, sports tournaments, beauty contests, etc.</i></p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else if (section === 'certificate') {
+    content.innerHTML = `
+        <h2 class="section-title">Foreign Language Certificates:</h2>
+        <div class="certificate-container">
+            <div class="certificate-item">
+                <img src="ChungchiSW.jpg" alt="Toeic SW Certificate" class="certificate-img"/>
+                <p class="certificate-title"><i>Toeic Speaking & Writing</i></p>
+
+        <h2 class="section-title">Collaborator Certificates:</h2>
+        <div class="certificate-container">
+            <div class="certificate-item">
+                <img src="ChungchiLCH.png" alt="Collaborator Certificate" class="certificate-img"/>
+            </div>
+        </div>
+    `;
+            } else if (section === 'project') {
+                content.innerHTML = `
+                    <div class="project-container">
+                        <div class="project-menu">
+                            <button onclick="showProject('brandIdentity')">BRAND IDENTITY</button>
+                            <button onclick="showProject('multiChannelDevelopment')">MULTI-CHANNEL DEVELOPMENT</button>
+                            <button onclick="showProject('website')">WEBSITE</button>
+                            <button onclick="showProject('mobileApp')">MOBILE APP</button>
+                        </div>
+<div class="project-content" id="projectContent">
+    <p>This is just a summary of one of the course projects I have done.</p>
+    <p>You can see the details or see more projects here: 
+        <a href="https://drive.google.com/drive/folders/1pzgviZvPl_vdPlgwBfd2vvgwmDQtOE0f" target="_blank">Link!</a>
+    </p>
+    <p>Sincerely!</p>
+</div>
+                    </div>
+                `;
+            }
+        }
+
+        function showProject(type) {
+            var projectContent = document.getElementById('projectContent');
+            projectContent.innerHTML = ''; // Clear previous project content
+            if (type === 'brandIdentity') {
+                projectContent.innerHTML = `
+                    <div class="project">
+                        <h3>Velvetnut Nut Milk</h3>
+                        <ul>
+                            <li>- Developed the exclusive Velvetnut nut milk brand.</li>
+                            <li>- Created a family story of four characters (father, mother, son, daughter) representing four different types of nut milk (almond, lotus seed, macadamia, chestnut).</li>
+                            <li>- Designed the primary color scheme and brand identity package.</li>
+                        </ul>
+                        <img src="1.png" alt="Velvetnut Nut Milk">
+                    </div>
+                    <div class="project">
+                    <h3>TechTrendz Technology Store</h3>
+                    <ul>
+                        <li>- Establishing retail channels through Haravan, Shopee, Lazada,….</li>
+                        <li>- Designed the interface, logo, and primary color scheme.</li>
+                    </ul>
+                    <img src="2.png" alt="TechTrendz Technology Store">
+                </div>
+                `;
+            } else if (type === 'multiChannelDevelopment') {
+                projectContent.innerHTML = `
+                    <div class="project">
+                    <h3>Facebook</h3>
+                    <img src="3.png" alt="Ảnh 1">
+                    <img src="4.png" alt="Ảnh 1">                    
+                </div>
+                <div class="project">
+                    <h3>Email</h3>
+                    <img src="5.png" alt="Ảnh email">
+                </div>
+                <div class="project">
+                    <h3>TikTok</h3>
+                    <img src="6.png" alt="Ảnh 7">
+                </div>
+                <div class="project">
+                    <h3>Website</h3>
+                    <img src="7.png" alt="Ảnh 7">
+                </div>
+                `;
+            } else if (type === 'website') {
+                projectContent.innerHTML = `
+                    <div class="project">
+                        <h3>iHunter Platform</h3>
+                        <p>Develop an exclusive online platform <b> http://ithunter.com.vn </b> specifically designed for searching, recruiting, applying, etc. for specific jobs in the field of Information Technology in Vietnam.</p>
+                        <img src="8.png" alt="iHunter Platform Image 1">
+                        <img src="9.png" alt="iHunter Platform Image 2">
+                    </div>
+                `;
+            } else if (type === 'mobileApp') {
+                projectContent.innerHTML = `
+                    <div class="project">
+                        <h3>Zedge Cool Sales Application</h3>
+                        <p>Based on customers' growing demand for e-commerce, our team develops a Zedge Cool sales application to bring better shopping experiences to customers while creating new sources of profit for the brand.</p>
+                        <img src="14.png" alt="Zedge Cool Sales Application Image 1">                   
+                        <img src="10.png" alt="Zedge Cool Sales Application Image 2">
+                        <img src="11.png" alt="Zedge Cool Sales Application Image 3">
+                        <img src="12.png" alt="Zedge Cool Sales Application Image 4">
+                        <img src="13.png" alt="Zedge Cool Sales Application Image 5">
+                    </div>
+                `;
+            }
+        }
+
+        // Call showContent with 'introduction' when the page loads
+        window.onload = function() {
+            showContent('introduction');
+        };
+    </script>
+
+</body>
+</html>

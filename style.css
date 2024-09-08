@@ -1,0 +1,375 @@
+/* General styles */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Change to Times New Roman */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+    font-size: 20px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; /* Center the container */
+    width: 100%;
+    max-width: 1200px; /* Max width for larger screens */
+    background-color: white; /* Container background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside container */
+}
+
+/* Menu button styles */
+.menu {
+    margin: 20px 0;
+    display: flex; /* Align buttons in a row */
+    justify-content: center; /* Center buttons */
+}
+
+.menu button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.menu button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Content section styles */
+.content {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Introduction section styles */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.intro-image {
+    flex: 1;
+    max-width: 200px; /* Adjust image width */
+    margin-right: 20px;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.intro-text {
+    flex: 2;
+    max-width: 800px; /* Limit text width for readability */
+    text-align: left; /* Align text to the left */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column; /* Stack elements on smaller screens */
+        align-items: center; /* Center elements */
+    }
+    
+    .intro-image {
+        margin-right: 0; /* Remove margin on small screens */
+        margin-bottom: 20px; /* Add space below image */
+    }
+}
+.content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.skill-level {
+    display: flex;
+    flex-direction: column; /* Stack levels vertically */
+    align-items: center; /* Center each level's content */
+}
+
+.level {
+    margin-bottom: 20px; /* Space between levels */
+    text-align: center; /* Center text within each level */
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap; /* Allow logos to wrap */
+    justify-content: center; /* Center logos */
+    gap: 20px; /* Space between logos */
+}
+
+.logos img {
+    width: 80px; /* Set a uniform width for all logos */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure logos fit well */
+}
+.header h2 {
+    font-size: 24px; /* Kích thước chữ lớn hơn */
+    margin: 0; /* Không có khoảng cách bên ngoài */
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: auto; /* Giữa màn hình */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt */
+    border-radius: 5px; /* Bo góc cho timeline */
+}
+
+.timeline-item {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #b52d2d; /* Màu chấm tròn */
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #b52d2d; /* Màu chữ năm */
+}
+
+.timeline-item p {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #555;
+}
+* {
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước tổng thể */
+}
+
+.experience-header {
+    text-align: center;
+    color: white; /* Màu chữ tiêu đề */
+    margin-bottom: 20px;
+    background-color: #b44148;
+    padding: 15px; /* Khoảng cách bên trong */
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%; /* Đảm bảo chiếm toàn bộ chiều ngang */
+    max-width: 95%; /* Giảm kích thước tối đa */
+    margin: auto; /* Căn giữa */
+}
+
+.experience-timeline {
+    background-image: url('back.png');
+    background-size: contain; /* Đảm bảo hình ảnh hiển thị đầy đủ */
+    background-position: center; /* Căn giữa hình ảnh */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    margin: 0;
+    padding: 20px;
+    width: 100%; /* Đảm bảo div chiếm toàn bộ chiều ngang */
+    max-width: 95%; /* Giảm kích thước tối đa */
+    margin: auto; /* Căn giữa div */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    display: flex;
+    margin: 20px; /* Add some margin for better spacing */
+}
+
+.project-menu {
+    width: 200px; /* Fixed width for the menu */
+    margin-right: 20px; /* Space between menu and content */
+}
+
+.projectContent {
+    flex-grow: 1; /* Allow content to take remaining space */
+}
+
+.project {
+    margin-top: 20px; /* Space between projects */
+}
+
+.project img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+}
+
+        /* General styles */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background color */
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #dd1d2a; /* Header background color */
+            color: white; /* Header text color */
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+            margin: 20px auto; /* Center the container */
+            width: 100%;
+            max-width: 1200px; /* Max width for larger screens */
+            background-color: white; /* Container background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding inside container */
+        }
+
+        /* Button styles */
+        .button-container {
+            display: flex;
+            justify-content: center; /* Center buttons horizontally */
+            margin-bottom: 20px; /* Space below button group */
+        }
+
+        .button-container button {
+            margin: 0 10px; /* Space between buttons */
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #dd1d2a; /* Button background color */
+            color: white; /* Button text color */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .button-container button:hover {
+            background-color: #dd1d2a; /* Darker shade on hover */
+        }
+
+        /* Project styles */
+        .project-container {
+            display: flex; /* Use flex to arrange buttons and content */
+            width: 100%;
+        }
+
+        .project-menu {
+            width: 200px; /* Width for the vertical menu */
+            display: flex;
+            flex-direction: column; /* Arrange buttons vertically */
+            margin-right: 20px; /* Space between menu and content */
+        }
+
+        .project-menu button {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #dd1d2a;
+            border-radius: 5px;
+            background-color: white; /* Button background color */
+            color: #dd1d2a; /* Button text color */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        .project-menu button:hover {
+            background-color: #dd1d2a; /* Darker shade on hover */
+            color: white; /* Change text color on hover */
+        }
+
+        .project-content {
+            flex: 1; /* Take up remaining space */
+            padding: 20px;
+            border-left: 1px solid #e0e0e0; /* Optional left border for separation */
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .icon-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* Hiển thị các biểu tượng theo hàng ngang */
+            justify-content: center; /* Căn giữa các biểu tượng */
+            margin: 10px 0;
+        }
+        .icon-list li {
+            margin: 0 15px; /* Khoảng cách giữa các biểu tượng */
+            font-size: 20px; /* Kích thước biểu tượng */
+            display: flex; /* Hiển thị theo hàng ngang */
+            flex-direction: column; /* Sắp xếp theo cột */
+            align-items: center; /* Căn giữa các phần tử */
+            color: white; /* Màu trắng cho biểu tượng */
+        }
+        .phone-number {
+            color: white; /* Màu trắng cho số điện thoại và chữ */
+            font-weight: normal; /* Không in đậm */
+            font-size: 14px; /* Kích thước chữ nhỏ hơn */
+            margin-top: 5px; /* Khoảng cách giữa biểu tượng và chữ */
+        }
+        ul {
+            list-style-type: none; /* Xóa dấu chấm */
+            padding: 0; /* Xóa khoảng cách bên trái */
+        }
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .certificate-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        
+        .certificate-item {
+            text-align: center;
+            margin: 0 20px; /* Khoảng cách giữa các chứng chỉ */
+            
+        }
+    
+        .certificate-img {
+            width: 300px; /* Chiều rộng cố định cho ảnh */
+            height: auto; /* Tự động điều chỉnh chiều cao */
+        }
